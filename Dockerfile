@@ -2,7 +2,7 @@
 FROM node:22-slim
 
 # Enable pnpm
-ENV PNPM_HOME="/pnpm"
+ENV PNPM_HOME="~/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack prepare pnpm@10.0.0 --activate
 RUN corepack enable
